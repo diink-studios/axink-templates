@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.ns",
+      "deno.window",
+      "dom",
+      "dom.asynciterable"
+    ]
+  },
+  "imports": {
+    "axink": "../axink-deno/src/index.t"
+  },
+  "tasks": {
+    "serve": "deno run --allow-net --allow-read --watch .bundler/server.ts",
+    "run": "deno run -Ar --watch --unstable src/webview.ts",
+    "dev": "deno task build & deno task serve & deno task run",
+    "build": "deno run --allow-run --allow-read --allow-env --allow-net --allow-write --watch .bundler/bundler.ts"
+  },
+  "lint": {
+    "files": {
+      "include": [
+        "src/",
+        ".bundler/"
+      ]
+    },
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-todo"
+      ],
+      "exclude": [
+        "no-unused-vars"
+      ]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": [
+        "src/",
+        ".bundler/"
+      ]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 80,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  }
+}
