@@ -8,7 +8,7 @@
     ]
   },
   "imports": {
-    "axink": "../axink-deno/src/index.t"
+    "axink": "https://deno.land/x/axink/src/mod.ts"
   },
   "tasks": {
     "serve": "deno run --allow-net --allow-read --watch .bundler/server.ts",
