@@ -1,7 +1,4 @@
-// Import Script:
-// import { SampleScript } from './sample-script.ts';
+// DYNAMIC IMPORT:
 
 export const scripts: Map<string, unknown> = new Map([
-    // Add Script with name
-    // ['SampleScript', SampleScript]
 ]);

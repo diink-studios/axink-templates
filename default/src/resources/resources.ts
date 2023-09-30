@@ -1,6 +1,4 @@
-import { waterShader } from "./shaders/water-shader";
-import { simpleShader } from "./shaders/simple-shader";
-import { unlitWaterShader } from './shaders/unlit-water-shader';
+// DYNAMIC IMPORT
 
 type Resources = {
   images: Map<string, any>;
@@ -10,17 +8,20 @@ type Resources = {
   fonts: Array<string>;
 };
 
-
 export const resources: Resources = {
   images: new Map([
-    ['enjin', 'enjin.png'],
-    ['player', 'player.png'],
-    ['witch', 'witch_idle.png'],
-    ['character', 'character.png'],
-    ['water-shader', 'water-shader.png'],
+  // IMAGES IMPORT
   ]),
-  videos: new Map([]),
-  models: new Map([]),
-  shaders: new Map([]),
-  fonts: [],
+  videos: new Map([
+  // VIDEOS IMPORT
+  ]),
+  models: new Map([
+  // MODELS IMPORT
+  ]),
+  shaders: new Map([
+  // SHADERS IMPORT
+  ]),
+  fonts: [
+  // FONTS IMPORT
+  ],
 };

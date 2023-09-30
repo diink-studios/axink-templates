@@ -1,5 +1,5 @@
-import { Axink, Color } from 'axink';
-import { scenes } from './scenrd/scenes.ts';
+import { Axink, Color } from 'https://deno.land/x/axink@0.0.2-alpha/src/mod.ts';
+import { scenes } from './scenes/scenes.ts';
 import { entities } from './entities/entities.ts';
 import { scripts } from './scripts/scripts.ts';
 import { resources } from './resources/resources.ts';

@@ -1,3 +1,2 @@
-
-
-export const scenes: Array<any> = []
+export const scenes: Array<any> = [
+];
